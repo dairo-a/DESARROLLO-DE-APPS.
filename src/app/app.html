@@ -1,0 +1,13 @@
+<h1>Pokédex</h1>
+
+<div *ngIf="loading()">Cargando pokémon...</div>
+
+<div class="grid" *ngIf="!loading()">
+	<div class="card" *ngFor="let p of pokemons()">
+		<img [src]="p.image" [alt]="p.name" />
+		<div class="card-body">
+			<h3>{{ p.name | titlecase }}</h3>
+			<p>#{{ p.id }}</p>
+		</div>
+	</div>
+</div>

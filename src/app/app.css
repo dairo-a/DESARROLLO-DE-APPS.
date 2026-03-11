@@ -1,0 +1,45 @@
+:root{
+	--card-bg: #fff;
+	--card-border: #e0e0e0;
+	--accent: #ef5350;
+}
+
+h1{
+	text-align:center;
+	margin:16px 0;
+}
+
+.grid{
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	gap:16px;
+	padding:16px;
+}
+
+.card{
+	background:var(--card-bg);
+	border:1px solid var(--card-border);
+	border-radius:8px;
+	padding:12px;
+	text-align:center;
+	box-shadow:0 2px 6px rgba(0,0,0,0.06);
+}
+
+.card img{
+	width:96px;
+	height:96px;
+	object-fit:contain;
+	display:block;
+	margin:0 auto 8px;
+}
+
+.card-body h3{
+	margin:4px 0;
+	color:#333;
+}
+
+.card-body p{
+	margin:0;
+	color:var(--accent);
+	font-weight:600;
+}
